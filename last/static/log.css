@@ -1,0 +1,10 @@
+table {
+  margin-top: 60px;  
+  word-wrap: break-word; 
+}
+td {
+  text-align: center;
+}
+th {
+  text-align: center;
+}

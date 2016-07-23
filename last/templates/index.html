@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../static/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/style.css">
+		<title>DANS</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">DANS</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 col-md-2 sidebar">
+					<ul class="nav nav-sidebar">
+						<li class="active"><a href="/index">网路实况</a></li>
+					</ul>
+					<ul class="nav nav-sidebar">
+						<li><a href="/add-container">添加容器</a></li>
+						<li><a href="/add-switch">添加switch</a></li>
+					</ul>
+					<ul class="nav nav-sidebar">
+						<li><a href="/del-container">删除container</a></li>
+						<li><a href="/del-switch">删除switch</a></li>
+					</ul>
+					<ul class="nav nav-sidebar">
+						<li><a href="/rule">规则详情</a></li>
+					</ul>
+					<ul class="nav nav-sidebar">
+						<li><a href="/log">日志详情</a></li>
+					</ul>
+				</div>
+				<div class="col-md-offset-2 col-md-8">
+					<canvas id="topo" width="900" height="600"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/jquery.min.js"></script>
+	<script src="../static/bootstrap.min.js"></script>
+	<script src="../static/jtopo-0.4.8-min.js"></script>
+	<script src="../static/topo.js"></script>
+</body>
+</html>

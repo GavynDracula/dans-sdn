@@ -1,0 +1,3 @@
+IF alert == 'Not Suspicious Traffic' THEN [output(src + " is trying telnet " + dst)]
+IF alert == 'Not Suspicious Traffic' && trigger(3,2) THEN [refuse(src)]
+IF alert == 0 && score >= 9.5 THEN [connect(self),monitor(self),output("Dangeous Container")]
